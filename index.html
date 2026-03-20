@@ -7,13 +7,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Netflix Venezuela: Ve series online, ve películas online</title>
   <link rel="icon" type="image" href="./Nicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-black text-white">
 
   <!--Primera sección-->
-  <div>
-  <img  class="bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/eb110559-67e9-40ec-8f1c-4a45b9f9c9bb/web/VE-es-20260309-TRIFECTA-perspective_2cfdc0a3-bd27-40a8-956d-96cb61596eed_large.jpg')]">
-  </div>
+  <header class="relative bg-center bg-cover h-screen bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/7ea4545e-42d3-4ebf-82fd-0e1984dc6375/web/VE-es-20260316-TRIFECTA-perspective_52b87407-7aeb-41fe-b150-566bac5a8063_large.jpg')]">
+    <div class="w-full h-full bg-gradient-to-b from-black/90 via-black/60 to-black/60 absolute inset-0"></div>
+
+    <!--Aquí hacemos el nav bar-->
+    <nav class="relative z-10 flex items-center justify-between px-32 py-1">
+        <!--Logo de Netflix-->
+        <img class="w-[187px]" src="./netlogoheader.png" alt="Netflix Logo">
+        <!--Botones-->
+        <div class="flex justify-end gap-3 font-sans font-medium">
+          <!--Botón de Idioma-->
+          <select class="flex flex-col text-white gap-3 font-sans font-medium px-5 border border-gray-500 rounded bg-black/50 py-1 bg-transparent">
+            <option class="text-black px-3"> Español</option>
+            <option class="text-black px-3"> English</option>
+          </select>
+          <!--Botón de Iniciar Sesión-->
+          <button class="px-3.5 py-1 bg-[rgb(229,9,20)] rounded">Iniciar Sesión</button>
+        </div>
+    </nav>
+    <!--Título central-->
+    <div class="relative z-10 flex flex-col items-center justify-center pt-[16vh] font-sans text-center">
+      <h1 class="text-6xl font-bold">Películas y series</h1>
+      <h1 class="text-6xl font-bold mt-2">ilimitadas y mucho</h1>
+      <h1 class="text-6xl font-bold mt-2">más</h1>
+      <p class="mt-6 text-xl font-semibold">A partir de USD 3,99. Cancela cuando quieras.</p>
+      <p class="mt-8 text-lg">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu<br> membresía de Netflix.</p>
+    </div>
+
+    <!--Input y comenzar-->
+    <div class="relative z-10 flex text-center items-center justify-center gap-3 pt-[2vh]">
+      <!--Email-->
+      <input placeholder="Email" class="py-4 pl-4 pr-48 rounded border border-gray-500 bg-black/60">
+      <!--Comenzar-->
+      <button class="font-bold text-xl px-5 py-3 bg-[rgb(229,9,20)] rounded">Comenzar  ></button>
+    </div>
+  </header>
+
+
 </body>
 </html>
